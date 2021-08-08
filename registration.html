@@ -10,36 +10,43 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
-    <title>Sign In</title>
+    <title>Registration</title>
 </head>
 
 <body>
 
     <div class="container border rounded p-3 mt-lg-5  " style="width: 350px">
-        <h2 class="text-center">Sign In</h2>
+        <h2 class="text-center">Registration</h2>
         <form>
             <div class="form-group">
-                <label for="exampleInputEmail1">Email address</label>
+                <label for="name">Name</label>
+                <input type="name" class="form-control" id="name" aria-describedby="nameHelp"
+                    placeholder="Enter Name">
+            
+            </div>
+           
+           
+           
+            <div class="form-group">
+                <label for="exampleInputEmail1">Email Address</label>
                 <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
                     placeholder="Enter email">
-      
+
             </div>
             <div class="form-group">
                 <label for="exampleInputPassword1">Password</label>
                 <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
             </div>
-            
-            <button type="submit" class="btn btn-danger">Sign In</button>
-            
+            <div class="form-group">
+                <label for="exampleInputPasswordConfirm">Password Confirm</label>
+                <input type="passwordConfirm" class="form-control" id="exampleInputPasswordConfirm" placeholder="Password">
+            </div>
+
+            <button type="submit" class="btn btn-danger">Registered</button>
+
         </form>
 
     </div>
-
-
-
-
-
-
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
