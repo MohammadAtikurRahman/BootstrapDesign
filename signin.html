@@ -22,26 +22,29 @@
                 <label for="exampleInputEmail1">Email address</label>
                 <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
                     placeholder="Enter email">
-      
+
             </div>
             <div class="form-group">
                 <label for="exampleInputPassword1">Password</label>
                 <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
             </div>
-            
-    
-       
-             <div>
-                    <input type="checkbox" value="">
-                    <label>Remember me? </label>
-                    <a href="#" class="stretched-link ml-5">Forget Password</a>
-             </div>
+
+
+
+            <div>
+                <input type="checkbox" value="">
+                
+                <label>Remember me? </label>
+                <a href="#" class="stretched-link ml-5">Forget Password</a>
+            </div>
 
 
             <button type="submit" class="btn btn-danger">Sign In</button>
             <!-- <button  type="submit" class="btn btn-success">Sign Up</button> -->
-        <a href="registration.html">Sign Up</a>   
-            
+            <!-- <a href="registration.html" class="link-success ml-4">Sign Up</a> -->
+            <button  href="registration.html" type="button"
+             class="btn btn-outline-success" 
+             onclick=" redirectReg()">Sign Up</button>    
         </form>
 
     </div>
@@ -62,6 +65,12 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
+
+        <script>
+            function redirectReg() {
+                location.href = "registration.html";
+            }
+        </script>
 </body>
 
 </html>
