@@ -39,12 +39,20 @@
             </div>
 
 
-            <button type="submit" class="btn btn-danger">Sign In</button>
-            <!-- <button  type="submit" class="btn btn-success">Sign Up</button> -->
-            <!-- <a href="registration.html" class="link-success ml-4">Sign Up</a> -->
+            <button  href="home.html"  type="button" 
+            class="btn btn-danger"  
+             onclick=" redirectHome()"   >Sign In</button>
+          
+           
+           
             <button  href="registration.html" type="button"
              class="btn btn-outline-success" 
              onclick=" redirectReg()">Sign Up</button>    
+
+
+
+
+
         </form>
 
     </div>
@@ -71,6 +79,17 @@
                 location.href = "registration.html";
             }
         </script>
+      <script>
+       function redirectHome()
+        {
+                    location.href = "home.html";
+         }
+      </script>
+
+
+
+
+
 </body>
 
 </html>
